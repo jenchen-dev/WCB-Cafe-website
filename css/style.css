@@ -170,7 +170,8 @@ article {
     font-weight: normal;
 }
 
-.post-title, .post-category {
+.post-title,
+.post-category {
     margin-left: 120px;
 }
 
@@ -261,6 +262,86 @@ aside p {
     object-fit: cover;
 }
 
+/* Contact page */
+#contact {
+    background-image: url(../images/contact-bg.jpg);
+    min-height: 100vh;
+}
+
+/* form */
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background: rgba(255, 255, 255, .7);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1rem;
+    margin-bottom: 20px;
+}
+
+/* location & map */
+#location {
+    padding: 4% 0;
+}
+
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-info {
+    width: 22%;
+}
+
+.location-info p {
+    padding: 12px 10px;
+}
+
+.location-map {
+    width: 74%;
+}
+
+.iframe {
+    width: 100%;
+}
+
+
 /* mobile setting */
 @media (max-width: 600px) {
     .page-title {
@@ -292,7 +373,8 @@ aside p {
         flex-direction: column;
     }
 
-    article, aside {
+    article, 
+    aside {
         width: 100%;
     }
 
@@ -344,5 +426,16 @@ aside p {
 
     .big-box img {
         height: 100%;
+    }
+
+    /* Contact page */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
     }
 }
