@@ -337,8 +337,27 @@ input[type="submit"] {
     width: 74%;
 }
 
-.iframe {
+iframe {
     width: 100%;
+}
+
+/* social media */
+#social-media {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+
+#social-media .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-media .sub-title {
+    margin-bottom: 30px;
+}
+
+.media-box {
+    width: 30%;
 }
 
 
@@ -437,5 +456,20 @@ input[type="submit"] {
     input[type="email"],
     textarea {
         max-width: 100%;
+    }
+
+    #location .wrapper,
+    #social-media .wrapper {
+        flex-direction: column;
+    }
+
+    .location-info,
+    .location-map,
+    .media-box {
+        width: 100%;
+    }
+
+    .media-box {
+        margin-bottom: 30px;
     }
 }
